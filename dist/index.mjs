@@ -1,3 +1,6 @@
+// src/index.ts
+import "./editor-Y7WMRV7E.css";
+
 // src/RichTextEditor.tsx
 import { useEffect } from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
@@ -227,6 +230,7 @@ function Toolbar({ editor }) {
 }
 
 // src/RichTextEditor.tsx
+import "./editor-Y7WMRV7E.css";
 import { jsx as jsx4, jsxs as jsxs3 } from "react/jsx-runtime";
 var EXTENSIONS = [
   StarterKit.configure({ heading: { levels: [1, 2, 3] } }),

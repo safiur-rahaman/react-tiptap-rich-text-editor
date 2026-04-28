@@ -33,6 +33,7 @@ __export(index_exports, {
   RichTextEditor: () => RichTextEditor
 });
 module.exports = __toCommonJS(index_exports);
+var import_editor2 = require("./editor-Y7WMRV7E.css");
 
 // src/RichTextEditor.tsx
 var import_react = require("react");
@@ -263,6 +264,7 @@ function Toolbar({ editor }) {
 }
 
 // src/RichTextEditor.tsx
+var import_editor = require("./editor-Y7WMRV7E.css");
 var import_jsx_runtime4 = require("react/jsx-runtime");
 var EXTENSIONS = [
   import_starter_kit.default.configure({ heading: { levels: [1, 2, 3] } }),
