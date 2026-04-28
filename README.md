@@ -1,10 +1,18 @@
-<!-- # RichTextEditor
+# react-tiptap-rich-text-editor
 
 A fully-featured rich text editor built on [TipTap](https://tiptap.dev/) and React. Provides a clean, Notion-style toolbar with working controls for formatting, lists, links, alignment and more.
 
----
+## Install
 
-## File Structure
+npm install react-tiptap-rich-text-editor
+
+## Usage
+
+```tsx
+import { ERichTextEditor } from "react-tiptap-rich-text-editor";
+```
+
+<!-- ## File Structure
 
 ```
 rich-text-editor/
@@ -65,9 +73,9 @@ your-project/
 └── app/
     └── components/
         └── rich-text-editor/   ← drop it here
-```
+``` -->
 
-### 3 — Framework requirements
+### Framework requirements
 
 | Requirement | Notes |
 |---|---|
@@ -76,13 +84,13 @@ your-project/
 | CSS support | `editor.css` is a plain CSS file; no preprocessor needed |
 | TypeScript | Optional but fully typed |
 
-### 4 — No additional configuration needed
+### No additional configuration needed
 
 Extensions are pre-configured inside `RichTextEditor.tsx` in the `EXTENSIONS` constant. No wrapping Provider or context is required.
 
 ---
 
-## How It Works
+<!-- ## How It Works
 
 ```
 useEditor (TipTap)
@@ -113,7 +121,7 @@ RichTextEditor
     └──────────────────────► EditorContent (renders the ProseMirror DOM)
            │
            └─ onUpdate → serialize(editor, format) → onChange(value) → Parent
-```
+``` -->
 
 ### Active-state detection
 
@@ -263,7 +271,7 @@ const [json, setJson] = useState("");
 
 ---
 
-## Customisation Tips
+<!-- ## Customisation Tips
 
 - **Add an icon** → edit `icons.tsx`, export a new key.
 - **Add a toolbar button** → import the icon in `Toolbar.tsx` and add a `<ToolbarBtn>`.
@@ -271,15 +279,3 @@ const [json, setJson] = useState("");
 - **Change editor typography** → edit `editor.css` under `/* Typography */`.
 - **Add a new TipTap extension** → install the package, import it and add it to the `EXTENSIONS` array in `RichTextEditor.tsx`.
 - **Add a new output format** → add a case to the `serialize` / `deserialize` functions in `RichTextEditor.tsx` and extend the `OutputFormat` union in `types.ts`. -->
-
-
-# react-tiptap-rich-text-editor
-
-## Install
-
-npm install react-tiptap-rich-text-editor
-
-## Usage
-
-```tsx
-import { ERichTextEditor } from "react-tiptap-rich-text-editor";
