@@ -1,0 +1,41 @@
+{
+  "name": "react-tiptap-rich-text-editor",
+  "version": "1.0.0",
+  "description": "Reusable Rich Text Editor built with React + Tiptap",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "keywords": [
+    "react",
+    "tiptap",
+    "editor",
+    "rich-text",
+    "nextjs"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
+  "dependencies": {
+    "@tiptap/extension-highlight": "^3.22.4",
+    "@tiptap/extension-link": "^3.22.4",
+    "@tiptap/extension-subscript": "^3.22.4",
+    "@tiptap/extension-superscript": "^3.22.4",
+    "@tiptap/extension-text-align": "^3.22.4",
+    "@tiptap/extension-underline": "^3.22.4",
+    "@tiptap/pm": "^3.22.4",
+    "@tiptap/react": "^3.22.4",
+    "@tiptap/starter-kit": "^3.22.4"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "tsup": "^8"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "prepublishOnly": "npm run build"
+  }
+}
